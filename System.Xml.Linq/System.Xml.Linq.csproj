@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FDB752F2-8C2F-4D0C-BFD6-D983C4347FA2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>System.Xml.Linq</RootNamespace>
+    <AssemblyName>System.Xml.Linq</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NET_1_1;NET_2_0;NET_3_5</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>1699,1720</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\System.Core\build\common\Consts.cs">
+      <Link>build\common\Consts.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Core\build\common\Locale.cs">
+      <Link>build\common\Locale.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Core\build\common\MonoTODOAttribute.cs">
+      <Link>build\common\MonoTODOAttribute.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="class\System.Xml.Linq\Assembly\AssemblyInfo.cs" />
+    <Compile Include="class\System.Xml.Linq\System.Xml.Linq\Extensions.cs" />
+    <Compile Include="class\System.Xml.Linq\System.Xml.Linq\LoadOptions.cs" />
+    <Compile Include="class\System.Xml.Linq\System.Xml.Linq\ReaderOptions.cs" />
+    <Compile Include="class\System.Xml.Linq\System.Xml.Linq\SaveOptions.cs" />
+    <Compile Include="class\System.Xml.Linq\System.Xml.Linq\XAttribute.cs" />
+    <Compile Include="class\System.Xml.Linq\System.Xml.Linq\XCData.cs" />
+    <Compile Include="class\System.Xml.Linq\System.Xml.Linq\XComment.cs" />
+    <Compile Include="class\System.Xml.Linq\System.Xml.Linq\XContainer.cs" />
+    <Compile Include="class\System.Xml.Linq\System.Xml.Linq\XDeclaration.cs" />
+    <Compile Include="class\System.Xml.Linq\System.Xml.Linq\XDocument.cs" />
+    <Compile Include="class\System.Xml.Linq\System.Xml.Linq\XDocumentType.cs" />
+    <Compile Include="class\System.Xml.Linq\System.Xml.Linq\XElement.cs" />
+    <Compile Include="class\System.Xml.Linq\System.Xml.Linq\XIterators.cs" />
+    <Compile Include="class\System.Xml.Linq\System.Xml.Linq\XName.cs" />
+    <Compile Include="class\System.Xml.Linq\System.Xml.Linq\XNamespace.cs" />
+    <Compile Include="class\System.Xml.Linq\System.Xml.Linq\XNode.cs" />
+    <Compile Include="class\System.Xml.Linq\System.Xml.Linq\XNodeDocumentOrderComparer.cs" />
+    <Compile Include="class\System.Xml.Linq\System.Xml.Linq\XNodeEqualityComparer.cs" />
+    <Compile Include="class\System.Xml.Linq\System.Xml.Linq\XNodeNavigator.cs" />
+    <Compile Include="class\System.Xml.Linq\System.Xml.Linq\XNodeReader.cs" />
+    <Compile Include="class\System.Xml.Linq\System.Xml.Linq\XNodeWriter.cs" />
+    <Compile Include="class\System.Xml.Linq\System.Xml.Linq\XObject.cs" />
+    <Compile Include="class\System.Xml.Linq\System.Xml.Linq\XObjectChange.cs" />
+    <Compile Include="class\System.Xml.Linq\System.Xml.Linq\XObjectChangeEventArgs.cs" />
+    <Compile Include="class\System.Xml.Linq\System.Xml.Linq\XProcessingInstruction.cs" />
+    <Compile Include="class\System.Xml.Linq\System.Xml.Linq\XStreamingElement.cs" />
+    <Compile Include="class\System.Xml.Linq\System.Xml.Linq\XText.cs" />
+    <Compile Include="class\System.Xml.Linq\System.Xml.Linq\XUtil.cs" />
+    <Compile Include="class\System.Xml.Linq\System.Xml.Schema\Extensions.cs" />
+    <Compile Include="class\System.Xml.Linq\System.Xml.XPath\Extensions.cs" />
+    <Compile Include="class\System.Xml\System.Xml.Serialization\SchemaTypes.cs" />
+    <Compile Include="class\System.Xml\System.Xml.Serialization\TypeData.cs" />
+    <Compile Include="class\System.Xml\System.Xml.Serialization\TypeTranslator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="class\System.Xml.Linq\Assembly\ChangeLog" />
+    <None Include="class\System.Xml.Linq\System.Xml.Linq\ChangeLog" />
+    <None Include="class\System.Xml.Linq\System.Xml.Schema\ChangeLog" />
+    <None Include="class\System.Xml.Linq\System.Xml.XPath\ChangeLog" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\System.Core\System.Core.csproj">
+      <Project>{c7ebec17-ef2b-40f5-92a6-2355da091adf}</Project>
+      <Name>System.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
