@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.Core", "System.Core\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.Xml.Linq", "System.Xml.Linq\System.Xml.Linq.csproj", "{FDB752F2-8C2F-4D0C-BFD6-D983C4347FA2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.Core.Test", "System.Core.Test\System.Core.Test.csproj", "{1A22FF35-6648-49A1-AEC5-9FF90B836B21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.Xml.Linq.Test", "System.Xml.Linq.Test\System.Xml.Linq.Test.csproj", "{ECFE987D-8524-43B0-A5B6-9713D707DFE4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{FDB752F2-8C2F-4D0C-BFD6-D983C4347FA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FDB752F2-8C2F-4D0C-BFD6-D983C4347FA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FDB752F2-8C2F-4D0C-BFD6-D983C4347FA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A22FF35-6648-49A1-AEC5-9FF90B836B21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A22FF35-6648-49A1-AEC5-9FF90B836B21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A22FF35-6648-49A1-AEC5-9FF90B836B21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A22FF35-6648-49A1-AEC5-9FF90B836B21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECFE987D-8524-43B0-A5B6-9713D707DFE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECFE987D-8524-43B0-A5B6-9713D707DFE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECFE987D-8524-43B0-A5B6-9713D707DFE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECFE987D-8524-43B0-A5B6-9713D707DFE4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

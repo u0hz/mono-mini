@@ -17,9 +17,10 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;NET_1_1;NET_2_0;INSIDE_SYSCORE;LIBC;NET_3_5</DefineConstants>
+    <DefineConstants>TRACE;DEBUG;NET_1_1;NET_2_0;INSIDE_SYSCORE;NET_3_5</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <NoWarn>1699,1720</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -45,7 +46,6 @@
     <Compile Include="class\System.Core\System.Linq.Expressions\BinaryExpression.cs" />
     <Compile Include="class\System.Core\System.Linq.Expressions\ConditionalExpression.cs" />
     <Compile Include="class\System.Core\System.Linq.Expressions\ConstantExpression.cs" />
-    <Compile Include="class\System.Core\System.Linq.Expressions\DynamicExpressionVisitor.cs" />
     <Compile Include="class\System.Core\System.Linq.Expressions\ElementInit.cs" />
     <Compile Include="class\System.Core\System.Linq.Expressions\EmitContext.cs" />
     <Compile Include="class\System.Core\System.Linq.Expressions\Expression.cs" />
@@ -73,10 +73,6 @@
     <Compile Include="class\System.Core\System.Linq.Expressions\UnaryExpression.cs" />
     <Compile Include="class\System.Core\System.Linq\Check.cs" />
     <Compile Include="class\System.Core\System.Linq\Enumerable.cs" />
-    <Compile Include="class\System.Core\System.Linq\EnumerableExecutor.cs" />
-    <Compile Include="class\System.Core\System.Linq\EnumerableExecutor_T.cs" />
-    <Compile Include="class\System.Core\System.Linq\EnumerableQuery.cs" />
-    <Compile Include="class\System.Core\System.Linq\EnumerableQuery_T.cs" />
     <Compile Include="class\System.Core\System.Linq\Grouping.cs" />
     <Compile Include="class\System.Core\System.Linq\IGrouping.cs" />
     <Compile Include="class\System.Core\System.Linq\ILookup_T.cs" />
@@ -88,12 +84,7 @@
     <Compile Include="class\System.Core\System.Linq\IQueryProvider.cs" />
     <Compile Include="class\System.Core\System.Linq\Lookup.cs" />
     <Compile Include="class\System.Core\System.Linq\OrderedEnumerable.cs" />
-    <Compile Include="class\System.Core\System.Linq\OrderedParallelQuery.cs" />
     <Compile Include="class\System.Core\System.Linq\OrderedSequence.cs" />
-    <Compile Include="class\System.Core\System.Linq\ParallelEnumerable.cs" />
-    <Compile Include="class\System.Core\System.Linq\ParallelExecutionMode.cs" />
-    <Compile Include="class\System.Core\System.Linq\ParallelMergeOptions.cs" />
-    <Compile Include="class\System.Core\System.Linq\ParallelQuery.cs" />
     <Compile Include="class\System.Core\System.Linq\Queryable.cs" />
     <Compile Include="class\System.Core\System.Linq\QueryableEnumerable.cs" />
     <Compile Include="class\System.Core\System.Linq\QueryableTransformer.cs" />
@@ -110,26 +101,12 @@
     <Compile Include="class\System.Core\System\Funcs.cs" />
     <Compile Include="class\System.Core\System\InvalidTimeZoneException.cs" />
     <Compile Include="class\System.Core\System\TimeZoneInfo.AdjustmentRule.cs" />
-    <Compile Include="class\System.Core\System\TimeZoneInfo.Android.cs" />
     <Compile Include="class\System.Core\System\TimeZoneInfo.cs" />
-    <Compile Include="class\System.Core\System\TimeZoneInfo.MonoTouch.cs" />
-    <Compile Include="class\System.Core\System\TimeZoneInfo.Serialization.cs" />
     <Compile Include="class\System.Core\System\TimeZoneInfo.TransitionTime.cs" />
     <Compile Include="class\System.Core\System\TimeZoneNotFoundException.cs" />
-    <Compile Include="class\System.Core\System\Util.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="build\common\Consts.cs" />
-    <None Include="build\common\ChangeLog" />
-    <None Include="class\System.Core\Assembly\ChangeLog" />
-    <None Include="class\System.Core\System.Collections.Generic\ChangeLog" />
-    <None Include="class\System.Core\System.Linq.Expressions\ChangeLog" />
-    <None Include="class\System.Core\System.Linq\ChangeLog" />
-    <None Include="class\System.Core\System.Runtime.CompilerServices\ChangeLog" />
-    <None Include="class\System.Core\System\ChangeLog" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="build\common\.gitignore" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

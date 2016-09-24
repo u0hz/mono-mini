@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ECFE987D-8524-43B0-A5B6-9713D707DFE4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>System.Xml.Linq.Test</RootNamespace>
+    <AssemblyName>System.Xml.Linq.Test</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;NET_1_1;NET_2_0;NET_3_5</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>1699,1720</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nunit.framework, Version=2.6.4.14350, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\System.Core\System.Core.csproj">
+      <Project>{c7ebec17-ef2b-40f5-92a6-2355da091adf}</Project>
+      <Name>System.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Xml.Linq\System.Xml.Linq.csproj">
+      <Project>{fdb752f2-8c2f-4d0c-bfd6-d983c4347fa2}</Project>
+      <Name>System.Xml.Linq</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Test\System.Xml.Linq\ExtensionsTest.cs" />
+    <Compile Include="Test\System.Xml.Linq\XAttributeTest.cs" />
+    <Compile Include="Test\System.Xml.Linq\XDocumentTest.cs" />
+    <Compile Include="Test\System.Xml.Linq\XElementTest.cs" />
+    <Compile Include="Test\System.Xml.Linq\XNamespaceTest.cs" />
+    <Compile Include="Test\System.Xml.Linq\XNameTest.cs" />
+    <Compile Include="Test\System.Xml.Linq\XNodeDocumentOrderComparerTest.cs" />
+    <Compile Include="Test\System.Xml.Linq\XNodeEqualityComparerTest.cs" />
+    <Compile Include="Test\System.Xml.Linq\XNodeNavigatorTest.cs" />
+    <Compile Include="Test\System.Xml.Linq\XNodeReaderTest.cs" />
+    <Compile Include="Test\System.Xml.Linq\XNodeWriterTest.cs" />
+    <Compile Include="Test\System.Xml.Linq\XObjectTest.cs" />
+    <Compile Include="Test\System.Xml.Linq\XProcessingInstructionTest.cs" />
+    <Compile Include="Test\System.Xml.Linq\XStreamingElementTest.cs" />
+    <Compile Include="Test\System.Xml.Linq\XTextTest.cs" />
+    <Compile Include="Test\System.Xml.Schema\ExtensionsTest.cs" />
+    <Compile Include="Test\System.Xml.XPath\ExtensionsTest.cs" />
+    <Compile Include="Test\System.Xml.XPath\ExtensionsTest2.cs" />
+    <Compile Include="Test\System.Xml.XPath\ExtensionsTest3.cs" />
+    <Compile Include="Test\System.Xml.XPath\ExtensionsTest4.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

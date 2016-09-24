@@ -82,12 +82,6 @@
     <Compile Include="class\System.Xml\System.Xml.Serialization\TypeTranslator.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="class\System.Xml.Linq\Assembly\ChangeLog" />
-    <None Include="class\System.Xml.Linq\System.Xml.Linq\ChangeLog" />
-    <None Include="class\System.Xml.Linq\System.Xml.Schema\ChangeLog" />
-    <None Include="class\System.Xml.Linq\System.Xml.XPath\ChangeLog" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\System.Core\System.Core.csproj">
       <Project>{c7ebec17-ef2b-40f5-92a6-2355da091adf}</Project>
       <Name>System.Core</Name>

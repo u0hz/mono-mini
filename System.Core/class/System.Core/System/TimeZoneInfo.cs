@@ -44,7 +44,7 @@ using System.Text;
 
 #if LIBC || MONODROID
 using System.IO;
-//using Mono;
+using Mono;
 #endif
 
 using Microsoft.Win32;
@@ -1294,7 +1294,8 @@ namespace System
 		}
 	}
 
-	struct TimeType {
+#else
+        struct TimeType {
 		public readonly int Offset;
 		public readonly bool IsDst;
 		public string Name;
@@ -1310,7 +1311,6 @@ namespace System
 		{
 			return "offset: " + Offset + "s, is_dst: " + IsDst + ", zone name: " + Name;
 		}
-#else
 	}
 #endif
 	}
